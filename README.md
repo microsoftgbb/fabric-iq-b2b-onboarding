@@ -1,4 +1,4 @@
-# Fabric IQ B2B Onboarding
+# PoC: Querying Power BI with Copilot: B2B Onboarding through Fabric IQ MCP
 
 Connect external Microsoft Entra B2B users to Power BI through native
 Fabric IQ MCP in GitHub Copilot CLI, using their own identities and
