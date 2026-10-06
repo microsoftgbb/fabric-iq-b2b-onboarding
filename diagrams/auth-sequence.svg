@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2520" height="2520" viewBox="0 0 2520 2520" role="img" aria-labelledby="title description">
+<title id="title">Fabric IQ MCP: authentication and authorization</title><desc id="description">Conceptual native OAuth flow, optional B2B federation, model RLS and OLS, and separate source identity.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="58" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#000000" text-anchor="start"><tspan x="40" dy="0">Fabric IQ MCP: authentication and authorization</tspan></text>
+<text x="40" y="106" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="40" dy="0">Native client owns OAuth. Item permissions and RLS/OLS still govern data access.</tspan></text>
+<rect x="20" y="165" width="320" height="140" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="180" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="180" dy="0">User / browser</tspan></text>
+<line x1="180" y1="305" x2="180" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="380" y="165" width="320" height="140" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="540" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="540" dy="0">Native</tspan><tspan x="540" dy="26">Copilot CLI</tspan></text>
+<line x1="540" y1="305" x2="540" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="740" y="165" width="320" height="140" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="900" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="900" dy="0">Entra ID /</tspan><tspan x="900" dy="26">resource policies</tspan></text>
+<line x1="900" y1="305" x2="900" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="1100" y="165" width="320" height="140" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1260" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="1260" dy="0">Home identity</tspan><tspan x="1260" dy="26">provider</tspan></text>
+<line x1="1260" y1="305" x2="1260" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="1460" y="165" width="320" height="140" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="1620" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="1620" dy="0">Fabric IQ</tspan><tspan x="1620" dy="26">MCP</tspan></text>
+<line x1="1620" y1="305" x2="1620" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="1820" y="165" width="320" height="140" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="1980" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="1980" dy="0">Power BI</tspan><tspan x="1980" dy="26">semantic engine</tspan></text>
+<line x1="1980" y1="305" x2="1980" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="2180" y="165" width="320" height="140" rx="12" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+<text x="2340" y="203" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="2340" dy="0">Model data</tspan><tspan x="2340" dy="26">source</tspan></text>
+<line x1="2340" y1="305" x2="2340" y2="2310" stroke="#495057" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="40" y="352" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="40" dy="0">AUTHN: establish the intended Microsoft account and delegated API access</tspan></text>
+<text x="1080" y="416" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">1. Connect; discover</tspan><tspan x="1080" dy="20.8">auth requirements</tspan></text>
+<line x1="540" y1="459" x2="1620" y2="459" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1080" y="516" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">2. Challenge / metadata</tspan><tspan x="1080" dy="20.8">when needed</tspan></text>
+<line x1="1620" y1="559" x2="540" y2="559" stroke="#0078D4" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="360" y="616" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="360" dy="0">3. Open native sign-in</tspan><tspan x="360" dy="20.8">state + PKCE</tspan></text>
+<line x1="540" y1="659" x2="180" y2="659" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="540" y="716" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="540" dy="0">4. Authorize in correct</tspan><tspan x="540" dy="20.8">resource context</tspan></text>
+<line x1="180" y1="759" x2="900" y2="759" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1080" y="816" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">5. B2B guest only:</tspan><tspan x="1080" dy="20.8">federate sign-in</tspan></text>
+<line x1="900" y1="859" x2="1260" y2="859" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1080" y="916" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">6. B2B guest only:</tspan><tspan x="1080" dy="20.8">home auth result</tspan></text>
+<line x1="1260" y1="959" x2="900" y2="959" stroke="#0078D4" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="540" y="1016" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="540" dy="0">7. Resource policy:</tspan><tspan x="540" dy="20.8">MFA + consent if required</tspan></text>
+<line x1="900" y1="1059" x2="180" y2="1059" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="360" y="1116" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="360" dy="0">8. Native callback:</tspan><tspan x="360" dy="20.8">authorization code</tspan></text>
+<line x1="180" y1="1159" x2="540" y2="1159" stroke="#0078D4" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="720" y="1216" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="720" dy="0">9. Redeem code:</tspan><tspan x="720" dy="20.8">native PKCE verifier</tspan></text>
+<line x1="540" y1="1259" x2="900" y2="1259" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="720" y="1316" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="720" dy="0">10. Delegated tokens</tspan><tspan x="720" dy="20.8">client-managed</tspan></text>
+<line x1="900" y1="1359" x2="540" y2="1359" stroke="#0078D4" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="1080" y="1416" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">11. Authenticated MCP:</tspan><tspan x="1080" dy="20.8">initialize + tools/list</tspan></text>
+<line x1="540" y1="1459" x2="1620" y2="1459" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="40" y="1524" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="40" dy="0">AUTHZ: verify item/model access, source access, and caller RLS/OLS</tspan></text>
+<text x="1080" y="1586" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">12. tools/call:</tspan><tspan x="1080" dy="20.8">identity or bounded query</tspan></text>
+<line x1="540" y1="1629" x2="1620" y2="1629" stroke="#5C2D91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1800" y="1686" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1800" dy="0">13. Execute under caller</tspan><tspan x="1800" dy="20.8">item/model permissions</tspan></text>
+<line x1="1620" y1="1729" x2="1980" y2="1729" stroke="#5C2D91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="2160" y="1786" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="2160" dy="0">14. If source read needed:</tspan><tspan x="2160" dy="20.8">configured source identity</tspan></text>
+<line x1="1980" y1="1829" x2="2340" y2="1829" stroke="#5C2D91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="2160" y="1886" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="2160" dy="0">15. Source-authorized</tspan><tspan x="2160" dy="20.8">data</tspan></text>
+<line x1="2340" y1="1929" x2="1980" y2="1929" stroke="#5C2D91" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="1800" y="1986" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1800" dy="0">16. Caller RLS/OLS:</tspan><tspan x="1800" dy="20.8">secured result or denial</tspan></text>
+<line x1="1980" y1="2029" x2="1620" y2="2029" stroke="#5C2D91" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="1080" y="2086" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="1080" dy="0">17. Actual result + errors</tspan><tspan x="1080" dy="20.8">artifact metadata</tspan></text>
+<line x1="1620" y1="2129" x2="540" y2="2129" stroke="#5C2D91" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<text x="360" y="2186" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#000000" text-anchor="middle"><tspan x="360" dy="0">18. Explain permitted results</tspan><tspan x="360" dy="20.8">retain actual evidence</tspan></text>
+<line x1="540" y1="2229" x2="180" y2="2229" stroke="#5C2D91" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+<rect x="40" y="2350" width="2440" height="140" rx="12" fill="#F3F2F1" stroke="#495057" stroke-width="2"/>
+<text x="1260" y="2388" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="middle"><tspan x="1260" dy="0">Conceptual boundaries; SDK / broker details vary. No asserted internal token-exchange implementation.</tspan><tspan x="1260" dy="26">Fixed workspace identity is an optional source pattern, not the guest caller. Cached queries may not read the source.</tspan></text>
+</svg>

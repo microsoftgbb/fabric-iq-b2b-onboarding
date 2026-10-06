@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph O["Owner: prepare access"]
+        A["1. Select report + model, expected user, licensing and source"]
+        B{"Member or B2B guest?"}
+        C["Member: confirm resource-tenant account"]
+        D["Guest: invite / redeem if needed; verify host guest object"]
+        E["3. Report + model Read; intended RLS role; existing OLS"]
+        A --> B
+        B -->|Member| C
+        B -->|Guest| D
+        C --> E
+        D --> E
+    end
+    subgraph U["User: sign in and connect"]
+        F["4. Original report; intended account; MFA and approved network if required"]
+        G["5. Native HTTP MCP configuration; separate GitHub / Microsoft sign-in"]
+        H["Confirm native server and current tools"]
+        E --> F --> G --> H
+    end
+    subgraph V["Owner + user: acceptance"]
+        I["6. Fresh identity; original model; permitted aggregate"]
+        J["Owner-defined serial RLS / OLS checks; restart identity"]
+        K["Record pass / fail / inconclusive; sanitized handoff"]
+        H --> I --> J --> K
+    end
+    X["Stop at failed gate; no speculative permission escalation"]
+    F -.->|Policy / licensing block| X
+    I -.->|Wrong caller / target| X
+    J -.->|Unexpected visibility| X

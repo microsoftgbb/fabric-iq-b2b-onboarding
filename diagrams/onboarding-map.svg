@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1560" viewBox="0 0 1560 1560" role="img" aria-labelledby="title description">
+<title id="title">Fabric IQ MCP: new-user onboarding</title><desc id="description">Owner preparation, user sign-in and connection, and evidence-based acceptance without permission escalation.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="58" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#000000" text-anchor="start"><tspan x="40" dy="0">Fabric IQ MCP: new-user onboarding</tspan></text>
+<text x="40" y="106" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#000000" text-anchor="start"><tspan x="40" dy="0">Same native client steps for members and guests. Only guests need the B2B invitation / redemption branch.</tspan></text>
+<text x="40" y="187" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="40" dy="0">OWNER: prepare access</tspan></text>
+<text x="560" y="187" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="560" dy="0">USER: sign in + connect</tspan></text>
+<text x="1080" y="187" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#000000" text-anchor="start"><tspan x="1080" dy="0">ACCEPTANCE: verify</tspan></text>
+<rect x="30" y="220" width="500" height="1210" rx="12" fill="none" stroke="#0078D4" stroke-width="2"/>
+<rect x="550" y="220" width="500" height="1210" rx="12" fill="none" stroke="#5C2D91" stroke-width="2"/>
+<rect x="1070" y="220" width="460" height="1210" rx="12" fill="none" stroke="#107C10" stroke-width="2"/>
+<rect x="50" y="260" width="460" height="350" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="280" y="297" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="280" dy="0">1. Select the target</tspan><tspan x="280" dy="24.7">Owner</tspan><tspan x="280" dy="24.7"></tspan><tspan x="280" dy="24.7">Report + linked model</tspan><tspan x="280" dy="24.7">Expected user and RLS role</tspan><tspan x="280" dy="24.7">Licensing + source preflight</tspan></text>
+<rect x="50" y="650" width="460" height="350" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="280" y="687" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="280" dy="0">2. Prepare the identity</tspan><tspan x="280" dy="24.7">Owner</tspan><tspan x="280" dy="24.7"></tspan><tspan x="280" dy="24.7">Member: confirm host account</tspan><tspan x="280" dy="24.7">Guest: invite / redeem if needed</tspan><tspan x="280" dy="24.7">Match accepted host guest object</tspan></text>
+<rect x="50" y="1040" width="460" height="350" rx="12" fill="#CFE4FA" stroke="#0078D4" stroke-width="2"/>
+<text x="280" y="1077" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="280" dy="0">3. Grant least privilege</tspan><tspan x="280" dy="24.7">Owner</tspan><tspan x="280" dy="24.7"></tspan><tspan x="280" dy="24.7">Report + model Read</tspan><tspan x="280" dy="24.7">Exact RLS role; existing OLS</tspan><tspan x="280" dy="24.7">No speculative Build / source grant</tspan></text>
+<rect x="570" y="260" width="460" height="350" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="800" y="297" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="800" dy="0">4. Check the report</tspan><tspan x="800" dy="24.7">User</tspan><tspan x="800" dy="24.7"></tspan><tspan x="800" dy="24.7">Sign in as intended user</tspan><tspan x="800" dy="24.7">Complete policy-required MFA</tspan><tspan x="800" dy="24.7">Approved network / VPN if required</tspan></text>
+<rect x="570" y="1000" width="460" height="350" rx="12" fill="#E8DAEF" stroke="#5C2D91" stroke-width="2"/>
+<text x="800" y="1037" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="800" dy="0">5. Connect native MCP</tspan><tspan x="800" dy="24.7">User</tspan><tspan x="800" dy="24.7"></tspan><tspan x="800" dy="24.7">Merge the HTTP configuration</tspan><tspan x="800" dy="24.7">GitHub and Microsoft logins differ</tspan><tspan x="800" dy="24.7">Confirm connected tools</tspan></text>
+<rect x="1090" y="620" width="420" height="350" rx="12" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+<text x="1300" y="657" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="middle"><tspan x="1300" dy="0">6. Prove and hand off</tspan><tspan x="1300" dy="24.7">Owner + user</tspan><tspan x="1300" dy="24.7"></tspan><tspan x="1300" dy="24.7">Fresh caller + original model</tspan><tspan x="1300" dy="24.7">Bounded positive / RLS / OLS probes</tspan><tspan x="1300" dy="24.7">Restart; record scoped outcomes</tspan></text>
+<line x1="280" y1="610" x2="280" y2="645" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="280" y1="1000" x2="280" y2="1035" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="510" y1="1215" x2="540" y2="1215" stroke="#0078D4" stroke-width="2"/>
+<line x1="540" y1="1215" x2="540" y2="435" stroke="#0078D4" stroke-width="2"/>
+<line x1="540" y1="435" x2="565" y2="435" stroke="#0078D4" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="580" y="680" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#000000" text-anchor="start"><tspan x="580" dy="0">Owner preparation precedes</tspan><tspan x="580" dy="26">user report / MCP checks.</tspan></text>
+<line x1="800" y1="610" x2="800" y2="995" stroke="#5C2D91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="815" y="808" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#000000" text-anchor="start"><tspan x="815" dy="0">Browser success</tspan><tspan x="815" dy="23.400000000000002">is not MCP</tspan><tspan x="815" dy="23.400000000000002">identity proof.</tspan></text>
+<line x1="1030" y1="1175" x2="1060" y2="1175" stroke="#5C2D91" stroke-width="2"/>
+<line x1="1060" y1="1175" x2="1060" y2="795" stroke="#5C2D91" stroke-width="2"/>
+<line x1="1060" y1="795" x2="1085" y2="795" stroke="#5C2D91" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1095" y="1089" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#000000" text-anchor="start"><tspan x="1095" dy="0">Accept only actual user results.</tspan><tspan x="1095" dy="24.7">Fail: unexpected data / identity.</tspan><tspan x="1095" dy="24.7">Inconclusive: source/schema error.</tspan><tspan x="1095" dy="24.7">Never count an error as zero.</tspan></text>
+<text x="40" y="1501" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#000000" text-anchor="start"><tspan x="40" dy="0">Stop at a failed gate. Fix the identified layer through approved owner action; never weaken MFA, RLS or OLS.</tspan></text>
+</svg>

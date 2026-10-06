@@ -1,0 +1,28 @@
+{
+  "purpose": "Owner/user worksheet; not an installer configuration. Replace placeholders; never add credentials.",
+  "userType": "<member-or-guest>",
+  "resourceTenantId": "<RESOURCE_TENANT_ID>",
+  "expectedUpn": "<EXPECTED_UPN>",
+  "ownerApprovedAliases": [],
+  "reportBrowserUrl": "<REPORT_BROWSER_URL>",
+  "reportId": "<REPORT_ID>",
+  "expectedSemanticModelId": "<EXPECTED_MODEL_ID>",
+  "cliProfileDirectory": "<LOCAL_PROFILE_DIRECTORY>",
+  "cliVersion": "<ACTUAL_EXECUTABLE_VERSION>",
+  "viewerLicensing": "<OWNER_VERIFIED_ENTITLEMENT-OR-UNKNOWN>",
+  "capacitySku": "<CURRENT_SKU-OR-NOT-APPLICABLE>",
+  "intendedRlsRole": "<OWNER_DEFINED_ROLE>",
+  "sourceCredentialMode": "<OWNER_REVIEWED_MODEL_SETTING>",
+  "allowedFactTable": "<OWNER_APPROVED_FACT_TABLE>",
+  "securedDimension": "<SECURED_DIMENSION>",
+  "categoryColumn": "<CATEGORY_COLUMN>",
+  "allowedCategory": "<OWNER_APPROVED_CATEGORY>",
+  "forbiddenCategories": ["<OWNER_CONFIRMED_EXISTING_CATEGORY>"],
+  "deniedTables": ["<OWNER_DESIGNATED_DENIED_TABLE>"],
+  "protectedNumericColumns": [
+    {
+      "table": "<TABLE>",
+      "column": "<OWNER_CONFIRMED_EXISTING_PROTECTED_COLUMN>"
+    }
+  ]
+}

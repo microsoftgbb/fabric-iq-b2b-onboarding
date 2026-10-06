@@ -1,0 +1,33 @@
+sequenceDiagram
+    autonumber
+    actor U as User / browser
+    participant C as Native Copilot CLI
+    participant E as Entra ID / resource policies
+    participant H as Home identity provider
+    participant M as Fabric IQ MCP
+    participant P as Power BI semantic engine
+    participant S as Model data source
+    Note over U,C: GitHub login is separate; Microsoft OAuth is client-managed
+    C->>M: Connect; discover authentication requirements
+    M-->>C: Authentication challenge / metadata when needed
+    C->>U: Open native sign-in with state and PKCE
+    U->>E: Authorize in the correct resource context
+    opt B2B guest with external home tenant
+    E->>H: Federate authentication to user's home identity
+    H-->>E: Home authentication result
+    end
+    E->>U: Apply resource policies, MFA and consent as required
+    U-->>C: Native callback with authorization code
+    C->>E: Redeem code using the native PKCE verifier
+    E-->>C: Delegated token response managed by the client
+    C->>M: Authenticated MCP initialize and tools/list
+    C->>M: tools/call: identity or bounded data query
+    M->>P: Execute under caller's item/model permissions
+    opt Model needs source access
+    P->>S: Read using the model's configured source identity
+    S-->>P: Source-authorized data
+    end
+    Note over P,S: Fixed workspace identity is optional and distinct from the guest
+    P-->>M: Result restricted by caller's RLS/OLS, or denial
+    M-->>C: Actual tool result, errors and artifact metadata
+    C-->>U: Explain permitted results; retain actual response evidence
